@@ -57,8 +57,7 @@ This section will link to the various code for your project (stored within this 
 - analysis
 - generating results. 
 
-[a relative link](code/Image Scrapping_Statistics - Russia and French.ipynb)
-https://github.com/ucsd-dsc-arts/dsc160-midterm-group-3/blob/master/code/Image%20Scrapping_Statistics%20-%20Russia%20and%20French.ipynb
+[https://github.com/ucsd-dsc-arts/dsc160-midterm-group-3/blob/master/code/Image%20Scrapping_Statistics%20-%20Russia%20and%20French.ipynb]: "scraping"
 
 Link each of your notebooks or .py files within this section, and provide a brief explanation of what the code does. Reading this section we should have a sense of how to run your code.
 
