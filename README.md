@@ -56,7 +56,7 @@ This section will link to the various code for your project (stored within this 
 - cleaning
 - analysis
 - generating results. 
-[https://github.com/ucsd-dsc-arts/dsc160-midterm-group-3/]('code/Image Scrapping_Statistics - Russia and French.ipynb')
+[https://github.com/ucsd-dsc-arts/dsc160-midterm-group-3/](code/Image Scrapping_Statistics - Russia and French.ipynb)
 Link each of your notebooks or .py files within this section, and provide a brief explanation of what the code does. Reading this section we should have a sense of how to run your code.
 
    Given the dataset above and our objectives in scraping these paintings from the same wiki website, we have two notebooks Image Scrapping_Statistics - Russia and French and Paintings_Scrape.ipynb that are for scraping. Since we decided upon 4 different countries we decided to divide the scraping notebooks, one for scraping British/Italian paintings and the other for Russian/French paintings. Since we chose a direct genre of “portraits” as our specific painting type, we scraped that entire webpage for artist names as well their respective countries if they resided in any of the 4. From here we entered all of the artists’ pages and got the links to their images.(Given that the amount of images we scraped were over 6000, the code may take a long while to run ~30 mins). From here we chose to get the statistics of these various paintings and add them into a dataframe. Through trial and error, we noticed that some images could not be calculated because their statistics are different(grayscale,...etc) and to mitigate this, we added try catch blocks into our code. 
