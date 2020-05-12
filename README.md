@@ -19,7 +19,7 @@ For the project proposal, please write a short abstact addressing the questions 
     - We will be analyzing image data from the wikiart website (primarily drawings, sketches, and paintings)
 
 - What is your research question? 
-    - Does art created in the same region of the world (Asia, Europe, etc) during different time periods have more variance than art created in different regions of the world during the same time period?
+    - Does art created in a specific country over a period of time have more variance than art created in different countries? 
 
 - What is your hypothesis about the results? 
     - We hypothesize that artwork created in the same areas of the world will have less variance than art created in different regions of the world during the same time period.
@@ -58,6 +58,13 @@ This section will link to the various code for your project (stored within this 
 - generating results. 
 
 Link each of your notebooks or .py files within this section, and provide a brief explanation of what the code does. Reading this section we should have a sense of how to run your code.
+
+Given the dataset above and our objectives in scraping these paintings from the same wiki website, we have two notebooks [Image Scrapping_Statistics - Russia and French](../code/Image Scrapping_Statistics - Russia and French.ipynb)
+
+and Paintings_Scrape.ipynb that are for scraping. Since we decided upon 4 different countries we decided to divide the scraping notebooks, one for scraping British/Italian paintings and the other for Russian/French paintings. Since we chose a direct genre of “portraits” as our specific painting type, we scraped that entire webpage for artist names as well their respective countries if they resided in any of the 4. From here we entered all of the artists’ pages and got the links to their images.(Given that the amount of images we scraped were over 6000, the code may take a long while to run ~30 mins). From here we chose to get the statistics of these various paintings and add them into a dataframe. Through trial and error, we noticed that some images could not be calculated because their statistics are different(grayscale,...etc) and to mitigate this, we added try catch blocks into our code. 
+Our other notebook, EDA, is where we explored the dataset itself and saw what kind of statistics they have in relation to another. Running the given code returns various histograms and groupbys that help showcase the differences between the artistic style of different countries and time periods. There is a breakdown and comparison of each country’s preference for various artistic styles, which provides the basis for what our classifier will later on use to make its classifications.
+Our last notebook, “classifier code” contains our prediction modeling for paintings and where the artists originated from. We decided to use the KNN and SVM as our testing models, both of which returned similar scores in terms of prediction. In our first run of the KNN model, we used all of the following features: mean brightness, mean hue, pixels, and mean saturation. We then trained our models on these features and tested the accuracy of our predictions of region. Then, to make sure that our model needed all of these features, we selected some features rather than all of them, to see what our accuracy score would be. When we did this, we saw a significant drop in our accuracy score in predicting the region. This is why there was some repeated code after the error visualizations. Also, we ran an SVM model in order to make sure that the results from our KNN model were not because of overfitting or just because of using the wrong type of classifier. 
+
 
 ## Results
 
