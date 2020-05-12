@@ -44,13 +44,7 @@ For the project proposal, please write a short abstact addressing the questions 
 
 ## Data
 
-(10 points) 
-
-This section will describe your data and its origins. Each item should contain a name of the data source, a link to the source, and any necessary background information such as:
-- What is your cultural data source? 
-- When was it made? 
-- Who created the works? 
-- Is it digital native, or is it some kind of scan, recording, photo, etc., of an analog form? 
+   Our data for our project consisted of two dataframes that contained artworks from French, Italian, British, and Russian artists. Specifically, we paid attention to portrait artworks from each of the geographical locations. Due to space constraints, the artworks were spaced out equally between the two dataframes. The primary source for our artwork was from wikiart.org and through our image scrapping capabilities, we were able to amass a portrait artworks dataset of over 6,500 pieces of portrait. A majority of our data consisted of pieces from the 19th and 20th century from a multitude of artists across the specified geographical locations. For the purposes of our analysis, artist names were omitted in the final version of the dataset. Based on the time period of our collected artworks, we can say that the artworks take on the traditional analog form of brush and paint. The art technique would allow us to perform our analytic methods consistently across both dataframes without the need to adjust for compatibility issues.
 
 ## Code
 
@@ -83,7 +77,9 @@ The first paragraph should be a short summary describing your results.
 
 The subsequent paragraphs could address questions including:
 - Why is this culturally relevant?
-- How does your computational approach differ from the traditional art historical, musicological, manuel/subjective approach to analyzing your cultural subject? 
+
+    The method we took on to analyze portrait images differs from the traditional application in the sense that it went beyond the subjective layer of the artwork. When we say subjective layer, we mean the direct subject in which the portrait is showing. Rather than discussing and analyzing the subject of the portrait, we focused around the technical aspects that were used to bring about the subject in the portrait. By focusing on features such as the mean hue, saturation and brightness, details we learned by taking this course, we were able to more broadly generalize artworks of the same kind. This negated potential issues with subjectively describing artworks that although were of the same type, were from different geographical locations and time periods.
+
 - How do you think the original artists/musicians would respond to this type of analysis? Would it change/inform their practice in some way?
 - How do your results relate to broader social, cultural, economic political, etc., issues? 
 - In what future directions could you expand this work?
